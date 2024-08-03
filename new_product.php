@@ -13,6 +13,7 @@ $nombre = $_POST['nombre'];
 $descripcion = $_POST['descripcion']; // Corrected variable name
 $precio = $_POST['precio'];
 
+//insertar registro en productos
 $sql = "INSERT INTO productos (nombre, descripcion, precio) VALUES ('$nombre', '$descripcion', '$precio')";
 
 if ($conn->query($sql) === true) {
