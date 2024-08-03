@@ -13,6 +13,7 @@ echo "Connected successfully";
 $nombre = $_POST['nombre'];
 $contrasena = $_POST['contrasena'];
 
+//buscar registro ee usuqrio
 $sql = "SELECT id, nombre FROM usuarios WHERE nombre = '$nombre' AND contrasena = '$contrasena' LIMIT 1";
 $result = $conn->query($sql);
 
